@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: transparent;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+header .containerHeader {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .containerHeader .logo {
+  font-family: "Rubik";
+  font-size: 20px;
+}
+header .containerHeader nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .containerHeader nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .containerHeader nav ul .colle {
+  position: relative;
+}
+header .containerHeader nav ul .colle:hover .dropdown {
+  display: block;
+}
+header .containerHeader nav ul .colle .dropdown {
+  position: absolute;
+  display: none;
+}
+header .containerHeader nav ul li {
+  list-style: none;
+  text-decoration: none;
+  margin-left: 25px;
+}
+header .containerHeader nav ul li .dropdown {
+  display: block;
+}
+header .containerHeader nav ul li .dropdown :hover {
+  display: block;
+}
+header .containerHeader nav ul li :hover {
+  color: #207DFF;
+  cursor: pointer;
+}
+header .containerHeader nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header .icons {
+  gap: 25px;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Rubik";
+  font-weight: bold;
+  z-index: 4;
+}
+header .icons :hover {
+  color: #207DFF;
+  cursor: pointer;
+}
+
+#sectionOne {
+  width: 100%;
+  height: 600px;
+  flex-direction: column;
+}
+#sectionOne .containerTwo {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+#sectionOne .containerTwo img {
+  height: auto;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  margin: auto;
+}
+#sectionOne .containerTwo .writeArea {
+  display: flex;
+  align-items: center;
+  display: block;
+  position: absolute;
+  bottom: 30%;
+  margin: auto;
+}
+#sectionOne .containerTwo .writeArea h1 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 70px;
+  text-align: center;
+}
+#sectionOne .containerTwo .writeArea .summer {
+  font-family: "Rubik";
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  width: 39%;
+  margin-top: 25px;
+  text-align: center;
+}
+#sectionOne .containerTwo .writeArea .write {
+  font-family: "Rubik";
+  font-weight: 100;
+  font-size: 28px;
+  margin-top: 25px;
+}
+#sectionOne .containerTwo .writeArea .buttons {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 25px;
+}
+#sectionOne .containerTwo .writeArea .buttons :hover {
+  cursor: pointer;
+  background-color: #207DFF;
+  color: white;
+  transition: 1s;
+}
+#sectionOne .containerTwo .writeArea .buttons .btn {
+  display: inline-block;
+  font-weight: 400;
+  border: 1px solid blue;
+  background-color: transparent;
+  color: blue;
+  font-family: "Rubik";
+  width: 25%;
+  height: 40px;
+  font-size: 20px;
+  padding: 9px;
+}
+#sectionOne .containerTwo .writeArea .buttons .btn :hover {
+  cursor: pointer;
+  background-color: #207DFF;
+  transition: 1s;
+}
+#sectionOne .containerTwo .writeArea .buttons .btn1 {
+  display: inline-block;
+  font-weight: 300;
+  align-items: center;
+  border: 1px solid transparent;
+  font-family: "Rubik";
+  background-color: #207DFF;
+  color: white;
+  width: 25%;
+  height: 40px;
+  font-size: 20px;
+  padding: 9px;
+  text-align: center;
+}
+#sectionOne .containerTwo .writeArea .buttons .btn1 :hover {
+  cursor: pointer;
+  background-color: transparent;
+  transition: 1s;
+}
+
+.containerCart {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+  margin: 15px;
+}
+.containerCart #productCartBox {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px 20px 0px 20px;
+  margin-top: 15px;
+}
+.containerCart #productCartBox .productCart {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+  align-items: center;
+  margin-top: 15px;
+  transition: 0.5s;
+}
+.containerCart #productCartBox .productCart:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.containerCart #productCartBox img {
+  width: 30%;
+  height: auto;
+}
+.containerCart #productCartBox .cardDesc {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.containerCart #productCartBox .cartBtn {
+  width: 100%;
+  height: 40px;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.containerCart #productCartBox .cartBtn:hover {
+  background-color: brown;
+  transition: 5s;
+}

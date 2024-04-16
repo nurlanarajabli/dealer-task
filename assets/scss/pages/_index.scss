@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: transparent;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  .containerHeader {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+
+    .logo {
+      font-family: "Rubik";
+      font-size: 20px;
+    }
+
+   
+      
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+
+        ul {
+         
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+          
+
+          .colle{
+            position: relative;
+            &:hover .dropdown{
+              display: block;
+            }
+           
+            .dropdown {
+              position: absolute;
+              display: none;
+            
+              
+            }
+          }
+      
+          
+          
+
+          li {
+    
+           
+            list-style: none;
+            text-decoration: none; 
+            margin-left: 25px;
+             
+            
+            .dropdown{
+              display: block;
+              :hover{
+                display: block;
+              }
+
+            }
+            :hover{
+                color: #207DFF;
+                cursor: pointer;
+              }
+
+            a {
+             
+              text-decoration: none;
+             
+              color: black;
+            
+            }
+          }
+        }
+      }
+    }
+
+    .icons {
+      gap: 25px;
+      display: flex;
+      justify-content: flex-end;
+      font-family: "Rubik";
+      font-weight: bold;
+      z-index: 4;
+      :hover{
+        color: #207DFF;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  #sectionOne {
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+
+    .containerTwo {
+      width: 80%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto;
+     
+      img {
+        height: auto;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        margin: auto;
+      }
+
+      .writeArea {
+        display: flex;
+        align-items: center;
+        display: block;
+        position: absolute;
+        bottom: 30%;
+        margin: auto;
+     
+
+        h1 {
+          font-family: "Rubik";
+          font-weight: 500;
+          font-size: 70px;
+          text-align: center;
+        }
+
+        .summer {
+          font-family: "Rubik";
+          font-weight: 600;
+          font-size: 20px;
+          color:black;
+          width: 39%;
+          margin-top: 25px;
+          text-align: center;
+        }
+
+        .write {
+          font-family: "Rubik";
+          font-weight: 100;
+          font-size: 28px;
+          margin-top: 25px;
+        }
+
+        .buttons {
+          display: block;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          justify-content: flex-start;
+          gap: 10px;
+          margin-top: 25px;
+          :hover{
+            cursor: pointer;
+            background-color:#207DFF;
+            color: white;
+            transition: 1s;
+        
+          }
+
+         
+          .btn {
+            display: inline-block;
+            font-weight: 400;
+            border: 1px solid blue;
+            background-color: transparent;
+            color: blue;
+            font-family: "Rubik";
+            width: 25%;
+            height: 40px;
+            font-size: 20px;
+            padding: 9px;
+            :hover{
+              cursor: pointer;
+              background-color:#207DFF;
+              transition: 1s;
+            }
+          }
+
+          .btn1 {
+            display: inline-block;
+            font-weight: 300;
+            align-items: center;
+            border: 1px solid transparent;
+            font-family: "Rubik";
+            background-color:#207DFF;
+            color: white;
+            width: 25%;
+            height: 40px;
+            font-size: 20px;
+            padding: 9px;
+            text-align: center;
+           :hover{
+            cursor: pointer;
+            background-color:transparent;
+            transition: 1s;
+          }
+          }
+        }
+      }
+    }
+  }
+
+  .containerCart {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-direction: column;
+    padding: 25px 25px;
+    margin: 25px ;
+   
+  
+ 
+    
+    
+
+    #productCartBox {
+      width: 90%;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0px 20px 0px 20px;
+      margin-top: 15px;
+
+      .productCart {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        border: 2px solid gray;
+        border-radius: 10px;
+        padding: 10px;
+        align-items: center;
+        margin-top: 15px;
+        transition: 1s;
+        justify-content: space-between;
+      }
+
+      .productCart:hover {
+       
+        transition:1s;
+      }
+
+      img {
+        width: 40%;
+    
+
+      }
+
+      .cardDesc {
+        width: 40%;
+        gap: 8px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      .cartBtn {
+        width:100%;
+        height: 40px;
+        background-color:blue;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        transition: 1s;
+        
+      }
+
+      .cartBtn:hover {
+        background-color:brown;
+        transition: 1s;
+       
+      }
+    }
+  }
+  // .containerThree{ 
+  //   width: 90%;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   margin: auto;
+  //   img{
+  //     height: auto;
+  //     width: 40%;
+  //     display: flex;
+  //     justify-content: space-between;
+  //     margin: auto;
+  //   }
+  //   .writingArea{
+
+  //   }
+  // }
